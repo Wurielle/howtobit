@@ -24,12 +24,12 @@ This guide will complete some of the misconception you could have when starting 
 
 ## Installing bit
 ### NPM
-```console
+```bash
 npm install bit-bin -g
 ```
 
 ## Initializing bit in your project
-```console
+```bash
 bit init
 ```
 ## [Isolating and Tracking Components](https://docs.bitsrc.io/docs/isolating-and-tracking-components.html)
@@ -40,24 +40,24 @@ A tracked component it must have at least a main file, and id.
 Even though the id argument is optional, it is a good idea to always include one.
 
 ### Adding a file:
-```console
+```bash
 bit add path/to/file.js --id component-theme/component-name
 ```
 In this case, file.js is automatically the main file and its id will be component-theme/component-name.  
 
 **Practical Example:**
-```console
+```bash
 bit add webpack-extension/css-comment-parser-webpack-plugin.js --id webpack/css-comment-parser-plugin
 ```
 
 ### Adding a folder:
-```console
+```bash
 bit add path/to/folder --main path/to/folder/file.js --id component-theme/component-name
 ```
 In this case, the whole folder will be part of the component and the main file must be specified.  
 
 **Practical Example:**
-```console
+```bash
 bit add webpack-extension --main webpack-extension/css-comment-parser-webpack-plugin.js --id webpack/css-comment-parser-plugin
 ```
 
@@ -66,7 +66,7 @@ bit add webpack-extension --main webpack-extension/css-comment-parser-webpack-pl
 
 To version a newly added/modified component use [bit tag](https://docs.bitsrc.io/docs/cli-tag.html).  
 ###Tagging a Component:
-```console
+```bash
 // tag all added components automatically
 bit tag --all
 // or tag all added components with a specific version
@@ -75,15 +75,15 @@ bit tag --all 0.0.1
 bit tag component-theme/component-name 0.0.1
 ```
 **Practical Example:**
-```console
+```bash
 bit tag webpack/css-comment-parser-plugin 0.0.1
 ```
 ### Exporting a Component:
-```console
+```bash
 bit export yourusername.yourscopename
 ```
 **Practical Example:**
-```console
+```bash
 bit export wurielle.pristine
 ```
 >**NOTE:** To add a compiler/tester AFTER your component has been exported please refer to
