@@ -39,7 +39,7 @@ To track a file/folder use [bit add](https://docs.bitsrc.io/docs/cli-add.html).
 A tracked component it must have at least a main file, and id.  
 Even though the id argument is optional, it is a good idea to always include one.
 
-###Adding a file:
+### Adding a file:
 ```console
 bit add path/to/file.js --id component-theme/component-name
 ```
@@ -50,7 +50,7 @@ In this case, file.js is automatically the main file and its id will be componen
 bit add webpack-extension/css-comment-parser-webpack-plugin.js --id webpack/css-comment-parser-plugin
 ```
 
-###Adding a folder:
+### Adding a folder:
 ```console
 bit add path/to/folder --main path/to/folder/file.js --id component-theme/component-name
 ```
@@ -78,7 +78,7 @@ bit tag component-theme/component-name 0.0.1
 ```console
 bit tag webpack/css-comment-parser-plugin 0.0.1
 ```
-###Exporting a Component:
+### Exporting a Component:
 ```console
 bit export yourusername.yourscopename
 ```
